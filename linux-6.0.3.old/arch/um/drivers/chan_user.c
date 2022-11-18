@@ -22,14 +22,9 @@ void generic_close(int fd, void *unused)
 int generic_read(int fd, char *c_out, void *unused)
 {
 	int n;
-//	os_info("\n\t\t\tfd, c_out, sizeof(*c_out)");
 	n = read(fd, c_out, sizeof(*c_out));
 
-//	if(sizeof(*c_out)==8)
-//		printk(KERN_DEFAULT "\ngeneric_read got: c_out = %s", c_out);
-        printk("fd=%d\n",fd);                                                                                                       
-        //                                                                                                                          
-        printk("c_out: %s\n",c_out);
+        //printk("c_out: %s\n",c_out);
 	if (n > 0)
 		return n;
 	else if (n == 0)
