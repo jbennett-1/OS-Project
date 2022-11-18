@@ -1,0 +1,64 @@
+!<thin>
+//                                              386       `
+stdio_console.o/
+fd.o/
+chan_kern.o/
+chan_user.o/
+line.o/
+ssl.o/
+stderr_console.o/
+slip_kern.o/
+slip_user.o/
+slip_common.o/
+slirp_kern.o/
+slirp_user.o/
+daemon_kern.o/
+daemon_user.o/
+umcast_kern.o/
+umcast_user.o/
+net_kern.o/
+net_user.o/
+mconsole_kern.o/
+mconsole_user.o/
+ubd_kern.o/
+ubd_user.o/
+null.o/
+port_kern.o/
+port_user.o/
+pty.o/
+tty.o/
+xterm.o/
+xterm_kern.o/
+cow_user.o/
+random.o/
+/0              0           0     0     644     9136      `
+/17             0           0     0     644     3888      `
+/23             0           0     0     644     10336     `
+/36             0           0     0     644     7584      `
+/49             0           0     0     644     16272     `
+/57             0           0     0     644     9608      `
+/64             0           0     0     644     3680      `
+/82             0           0     0     644     3712      `
+/95             0           0     0     644     7200      `
+/108            0           0     0     644     2440      `
+/123            0           0     0     644     4112      `
+/137            0           0     0     644     3456      `
+/151            0           0     0     644     4008      `
+/166            0           0     0     644     5304      `
+/181            0           0     0     644     5608      `
+/196            0           0     0     644     5104      `
+/211            0           0     0     644     20520     `
+/223            0           0     0     644     6736      `
+/235            0           0     0     644     25248     `
+/252            0           0     0     644     6744      `
+/269            0           0     0     644     49080     `
+/281            0           0     0     644     3104      `
+/293            0           0     0     644     2752      `
+/301            0           0     0     644     7848      `
+/314            0           0     0     644     6520      `
+/327            0           0     0     644     5072      `
+/334            0           0     0     644     3176      `
+/341            0           0     0     644     7976      `
+/350            0           0     0     644     2952      `
+/364            0           0     0     644     7568      `
+/376            0           0     0     644     5584      `

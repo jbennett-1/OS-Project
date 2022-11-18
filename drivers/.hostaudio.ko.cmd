@@ -1,0 +1,1 @@
+cmd_arch/um/drivers/hostaudio.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o arch/um/drivers/hostaudio.ko arch/um/drivers/hostaudio.o arch/um/drivers/hostaudio.mod.o;  true
