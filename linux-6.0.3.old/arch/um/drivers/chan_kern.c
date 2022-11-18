@@ -263,7 +263,7 @@ int write_chan(struct chan *chan, const char *buf, int len,
 }
 
 int console_write_chan(struct chan *chan, const char *buf, int len)
-{
+{ //if using os_info, writes to EACH line on the screen at startup
 	int n, ret = 0;
 
 	if (!chan || !chan->ops->console_write)

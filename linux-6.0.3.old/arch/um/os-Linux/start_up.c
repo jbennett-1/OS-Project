@@ -308,7 +308,6 @@ static void __init check_coredump_limit(void)
 		return;
 	}
 
-	os_info("\n\nCHECK\n\nCore dump limits :\n\tsoft - ");
 	if (lim.rlim_cur == RLIM_INFINITY)
 		os_info("NONE\n");
 	else

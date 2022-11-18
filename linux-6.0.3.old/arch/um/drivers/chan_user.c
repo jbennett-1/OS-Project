@@ -21,19 +21,12 @@ void generic_close(int fd, void *unused)
 
 int generic_read(int fd, char *c_out, void *unused)
 {
-//if fd=0,1,2 then..
-
-//ubd struct, members of ubd-write/read, anything connected w/ file system, calls ubd_read/write, kernel chooses btwn usb_write/read/generic_read/write, syscalls go to rax, then syscalls. interrupt move to kern, alers app that the process exec syscalls, loop of same things
-
-//static open for fd = open()
-//write(ifD) for everytime u write to it
 	int n;
-
-//	printk(UM_KERN_DEFAULT "\t\t\tgeneric_read got: %s",c_out);
-	
 //	os_info("\n\t\t\tfd, c_out, sizeof(*c_out)");
 	n = read(fd, c_out, sizeof(*c_out));
 
+//	if(sizeof(*c_out)==8)
+//		printk(KERN_DEFAULT "\ngeneric_read got: c_out = %s", c_out);
 	if (n > 0)
 		return n;
 	else if (n == 0)
